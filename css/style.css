@@ -1,77 +1,54 @@
+
 body {
-    background-color: red;
-}
-
-
-.container {
+    background-color:rgb(228, 228, 228);
     text-align: center;
 }
 
-
-#main-top {
-    display: flex;
-    justify-content: center;
+.container {
+    max-width: 450px !important;
+    margin: 0 auto !important;
 }
 
 
-.top {
-    display: flex;
-    justify-content: center;
+.result {
+    box-shadow: 2px 2px 30px 9px #897676;
+    padding-bottom: 10px;
 }
 
 
-.bord {
-    width: 80%;
-    background-color: lightgray;
-    padding-bottom: 25px;
-}
-
-
-.buttons {
-    margin-top: 20px;
+#ticket-container {
+    max-width: 780px !important;
 }
 
 
 
-.buttons a {
-    margin: 10px;
-    margin: 10px;
+#ticket-container .name {
+    margin-right: 50px;
     background: grey;
-    text-decoration: none;
-    padding: 10px;
+    padding: 0 5px 10px;
+    
+}
+
+
+#ticket-container #name-print {
     color: white;
-    border: 1px solid yellow;
+}
+
+#ticket-container .rate {
+    margin-right: 50px;
 }
 
 
-.bottom-container {
-    display: flex;
-    justify-content: center;
+#ticket-container .carr {
+    margin-right: 50px;
 }
 
 
-
-
-#ticket-section {
-    background: lightgrey;
-    border: 1px solid lightgrey;
-    width: 900px;
-    /* display: flex; */
-    margin: 0 auto;
+#ticket-container .cp {
+    margin-right: 50px;
 }
 
 
-
-.data-bottom {
-    margin: 20px;
-}
-
-.grey {
-    background: grey;
-    padding: 0 10px;
-}
-
-
-.data-top {
-    margin: 0 30px;
+#ticket-container .pric {
+    margin-right: 50px;
 }
