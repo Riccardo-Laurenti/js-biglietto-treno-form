@@ -63,7 +63,7 @@ buttonGenerate.addEventListener("click", function () {
 
             rateTicket = 'Sconto 20%';
 
-        } else if (ageSelect === 'over') {
+        } else if (ageSelect === 'over-65') {
             priceBase = priceCalc * 0.6;
 
             rateTicket = 'Sconto 40%';
