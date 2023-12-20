@@ -46,9 +46,9 @@ buttonGenerate.addEventListener("click", function () {
 
     const cpRand = Math.floor(Math.random() * 600) + 1;
 
-    let priceCalc = km * 0.21;
+    let priceOperationCalc = km * 0.21;
 
-    let priceBase = priceCalc;
+    let calcScount = priceOperationCalc;
 
     let rateTicket = 'Tariffa base';
 
@@ -59,12 +59,12 @@ buttonGenerate.addEventListener("click", function () {
     } else {
 
         if (ageSelect === 'min') {
-            priceBase = priceCalc * 0.8;
+            calcScount = priceOperationCalc * 0.8;
 
             rateTicket = 'Sconto 20%';
 
         } else if (ageSelect === 'over-65') {
-            priceBase = priceCalc * 0.6;
+            calcScount = priceOperationCalc * 0.6;
 
             rateTicket = 'Sconto 40%';
         }
@@ -80,7 +80,7 @@ buttonGenerate.addEventListener("click", function () {
 
     cpRandom.innerHTML = cpRand;
 
-    result.innerHTML = priceBase.toFixed(2) + ' €';
+    result.innerHTML = calcScount.toFixed(2) + ' €';
 
 
 })
