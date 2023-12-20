@@ -15,9 +15,9 @@ const btnDelete = document.getElementById('btn-delete');
 
 // Elementi Dom da stampare 
 
-const showTicket = document.getElementById('show-ticket');
+//const showTicket = document.getElementById('text-ticket');
 
-const ticketContain = document.getElementById('ticket-container')
+const showTicketContain = document.getElementById('ticket-container')
 
 const namePrint = document.getElementById('name-print')
 
@@ -34,7 +34,7 @@ const result = document.getElementById('price-ticket')
 
 buttonGenerate.addEventListener("click", function () {
 
-    const domTicket = showTicket;
+
 
     const name = nameSurnUser.value.trim();
 
@@ -69,10 +69,8 @@ buttonGenerate.addEventListener("click", function () {
             rateTicket = 'Sconto 40%';
         }
 
-        ticketContain.classList.remove('d-none')
+        showTicketContain.classList.remove('d-none')
     }
-
-    domTicket.innerHTML;
 
     namePrint.innerHTML = name;
 
@@ -98,5 +96,5 @@ btnDelete.addEventListener("click", function () {
 
     scountSelectAge.value = '';
 
-    ticketContain.classList.add('d-none')
+    showTicketContain.classList.add('d-none')
 })
